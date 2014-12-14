@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="@string/preferences_contactDeveloperCat">
+        <ListPreference 
+            android:title="@string/preferences_sensorDelayTitle"
+            android:key="sensorDelay"
+            android:summary="@string/preferences_sensorDelaySummary"
+            android:entries="@array/sensorDelay"
+            android:entryValues="@array/sensorDelayValues"
+            android:defaultValue="3"/>
+        <Preference android:title="@string/preferences_contactDeveloperTitel" android:key="emaildeveloper" android:summary="@string/preferences_contactDeveloperDescription" />
+        <Preference android:key="rateApp" android:summary="@string/preferences_rateAppDescription" android:title="@string/preferences_rateAppTitel" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_licenseCat">
+        <Preference android:summary="@string/preferences_licenseDescription" android:title="@string/preferences_licenseTitle" android:key="showLicense"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
